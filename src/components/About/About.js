@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './About.module.css';
 import Constants from '../../Constants';
+import SlidingPhotos from '../aboutPhoto/SlidingPhotos';
 
 export const About = () => {
   const [showHeading, setShowHeading] = useState(false);
@@ -79,7 +80,7 @@ export const About = () => {
 
         <div className={`${styles.photoContainer} ${showPhoto ? styles.visible : ''}`}>
           <div className={styles.photoFrame}>
-            <div className={styles.photo}></div>
+            <SlidingPhotos/>
             <div className={`${styles.frameCorner} ${styles.topLeft}`}></div>
             <div className={`${styles.frameCorner} ${styles.topRight}`}></div>
             <div className={`${styles.frameCorner} ${styles.bottomLeft}`}></div>

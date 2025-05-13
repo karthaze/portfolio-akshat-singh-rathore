@@ -97,6 +97,16 @@ experiences: [
     description: "Built a text-to-image search engine using deep learning techniques, achieving strong retrieval performance across a large image dataset.",
     highlights: ["ResNet-50", "Cosine Similarity", "Image Processing", "Data Pipelines"]
   }
+],
+aboutYouImages : [
+  require('./Assets/images/deewarWall.jpg'),
+  require('./Assets/images/personalPhoto1.jpeg'),
+  require('./Assets/images/rango.jpg'),
+  require('./Assets/images/personalPhoto2.jpeg'),
+  require('./Assets/images/gasperNoe.jpg'),
+  require('./Assets/images/personalPhoto3.jpeg'),
+  require('./Assets/images/tarantino.webp'),
+  require('./Assets/images/personalPhoto4.jpeg'),
 ]
 }
 
