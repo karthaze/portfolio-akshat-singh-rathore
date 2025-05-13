@@ -1,0 +1,46 @@
+.app {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cinema-inspired scrollbar */
+:global(body::-webkit-scrollbar) {
+  width: 12px;
+}
+
+:global(body::-webkit-scrollbar-track) {
+  background: #1a1a1a;
+}
+
+:global(body::-webkit-scrollbar-thumb) {
+  background-color: #c7a45d;
+  border-radius: 6px;
+}
+
+:global(body) {
+  scrollbar-width: thin;
+  scrollbar-color: #c7a45d #1a1a1a;
+}
+
+:global(html) {
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+:global(body) {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+}
+
+:global(*) {
+  box-sizing: border-box;
+}

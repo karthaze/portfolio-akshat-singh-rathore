@@ -1,0 +1,134 @@
+.footer {
+  background-color: #0a0a0a;
+  padding: 4rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nameText {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.directorText {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #c7a45d;
+  margin-top: 5px;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navList a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navList a:hover {
+  color: #c7a45d;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creditsContainer {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.creditsTitle {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
+}
+
+.creditsName {
+  font-size: 1rem;
+  color: #c7a45d;
+  font-weight: 600;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+}
+
+.footerQuote {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Film reel effect */
+.filmReel {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 12px solid rgba(199, 164, 93, 0.1);
+  z-index: 0;
+}
+
+.filmReel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px dashed rgba(199, 164, 93, 0.05);
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

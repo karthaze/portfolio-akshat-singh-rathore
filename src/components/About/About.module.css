@@ -1,0 +1,263 @@
+.about {
+  padding: 8rem 0;
+  background-color: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 2rem;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heading,
+.aboutContent,
+.photoContainer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+.directorSlate {
+  display: inline-block;
+  background-color: #c7a45d;
+  color: #0a0a0a;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.directorSlate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  border-color: transparent #c7a45d transparent transparent;
+}
+
+.mainHeading {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.mainHeading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c7a45d;
+  margin-top: 1rem;
+}
+
+.aboutContent {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
+}
+
+.aboutContent p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+}
+
+.aboutContent strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.personalDetails {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailLabel {
+  font-size: 0.9rem;
+  color: #c7a45d;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.detailValue {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.cta {
+  margin-top: 2.5rem;
+}
+
+.resumeBtn {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #c7a45d;
+  color: #c7a45d;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.resumeBtn:hover {
+  background-color: #c7a45d;
+  color: #0a0a0a;
+}
+
+/* Photo styling */
+.photoContainer {
+  flex: 0 0 400px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
+}
+
+.photoFrame {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 2px solid #c7a45d;
+  padding: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/images/gonzo-background-2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.frameCorner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: #c7a45d;
+  z-index: 2;
+}
+
+.topLeft {
+  top: -2px;
+  left: -2px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+}
+
+.topRight {
+  top: -2px;
+  right: -2px;
+  border-top: 4px solid;
+  border-right: 4px solid;
+}
+
+.bottomLeft {
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+}
+
+.bottomRight {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+}
+
+/* Film strip border */
+.filmStrip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h30v30H0zM40 0h30v30H40zM80 0h30v30H80zM120 0h30v30H120zM160 0h30v30H160zM200 0h30v30H200zM240 0h30v30H240zM280 0h30v30H280zM320 0h30v30H320zM360 0h30v30H360zM400 0h30v30H400z' fill='%23c7a45d' fill-opacity='0.15'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .content {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  
+  .photoContainer {
+    flex: 0 0 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 6rem 0;
+  }
+  
+  .mainHeading {
+    font-size: 2rem;
+  }
+  
+  .personalDetails {
+    grid-template-columns: 1fr;
+  }
+}

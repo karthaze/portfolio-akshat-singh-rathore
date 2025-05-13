@@ -1,0 +1,217 @@
+.loader {
+  background-color: #0a0a0a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.loaderContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.clapperboard {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+  perspective: 800px;
+}
+
+.clapperTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #c7a45d;
+  border-radius: 5px 5px 0 0;
+  transform-origin: bottom;
+  animation: clapAnimation 2.5s infinite;
+  z-index: 2;
+}
+
+.clapperTop::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 10px,
+    #0a0a0a 10px,
+    #0a0a0a 20px
+  );
+}
+
+.clapperBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #1a1a1a;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.clapperBottom::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: rgba(199, 164, 93, 0.5);
+  box-shadow: 0 20px 0 rgba(199, 164, 93, 0.5);
+}
+
+@keyframes clapAnimation {
+  0%, 10%, 90%, 100% {
+    transform: rotateX(0deg);
+  }
+  20%, 25% {
+    transform: rotateX(45deg);
+  }
+  30% {
+    transform: rotateX(0deg);
+  }
+}
+
+.loaderTitle {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.directorText {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #c7a45d;
+  margin-bottom: 0.5rem;
+}
+
+.nameText {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(to right, #c7a45d, #e0c088);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Film sprocket holes effect on progress bar */
+.progressFill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 15px,
+    rgba(0, 0, 0, 0.2) 15px,
+    rgba(0, 0, 0, 0.2) 20px
+  );
+}
+
+.progressText {
+  color: #c7a45d;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.filmCountdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.countdownNumber {
+  position: absolute;
+  font-size: 20rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.1);
+  animation: countdown 2.5s linear forwards;
+  opacity: 0;
+}
+
+.countdownNumber:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.countdownNumber:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.countdownNumber:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+@keyframes countdown {
+  0%, 5% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  10%, 20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25%, 100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .nameText {
+    font-size: 2rem;
+  }
+  
+  .countdownNumber {
+    font-size: 15rem;
+  }
+}
