@@ -23,7 +23,7 @@ export const About = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial trigger
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

@@ -163,6 +163,7 @@
 .photoContainer {
   flex: 0 0 400px;
   opacity: 0;
+  width: 80%;
   transform: translateY(30px);
   transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
 }
