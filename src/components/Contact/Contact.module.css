@@ -74,7 +74,7 @@
 
 .contactInfo {
   flex: 1;
-  min-width: 300px;
+  min-width: 200px;
   justify-content: center;
   align-items: center;
 }
