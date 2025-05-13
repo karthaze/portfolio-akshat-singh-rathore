@@ -28,7 +28,7 @@ export const Footer = () => {
         <div className={styles.footerBottom}>
           <div className={styles.creditsContainer}>
             <div className={styles.creditsTitle}>DIRECTED BY</div>
-            <div className={styles.creditsName}>{Constants.name}</div>
+            <div className={styles.creditsName}>{Constants.firstName}</div>
           </div>
           
           <div className={styles.copyright}>
@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
           
           <div className={styles.footerQuote}>
-            "Code is like poetry; every line matters."
+            "I like the smell of Napalm in the morning."
           </div>
         </div>
       </div>
