@@ -54,10 +54,10 @@ const Constants = {
     },
   ],
     summary: `I write code for a living, and sometimes for fun (don’t worry, I touch grass too).
-I’ve worked on everything from carpooling apps and digital photo books to fitness platforms — basically, if it has users and a loading spinner, I’ve probably tried to speed it up.
+I’ve worked on everything from carpooling apps and digital photo books to fitness platforms, basically, if it has users and a loading spinner, I\’ve probably tried to speed it up.
 I care about building things that work well, feel smooth, and don’t make the user want to throw their phone. I like clean code, well-timed features, and the kind of UI that feels like it has good dialogue.
-Somewhere between shipping features and fixing bugs at 2am, I developed an appreciation for the craft — not just of software, but storytelling too.
-There’s something satisfying about getting the timing, the pacing, and the flow just right — whether it’s in code or elsewhere.`,
+Somewhere between shipping features and fixing bugs at 2am, I developed an appreciation for the craft, not just of software, but storytelling too.
+There’s something satisfying about getting the timing, the pacing, and the flow just right, whether it’s in code or elsewhere.`,
     skills: {
     programming: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "Swift", "C++", "Objective-C"],
     frontend: ["ReactJS", "React Native", "Redux Toolkit", "Tailwind CSS", "HTML5", "CSS3", "SwiftUI", "UIKit", "MVVM"],
