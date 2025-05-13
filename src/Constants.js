@@ -82,6 +82,22 @@ There’s something satisfying about getting the timing, the pacing, and the flo
     url: 'https://instagram.com/akshat_1879',
   },
 ],
+experiences: [
+  {
+    title: "Software Engineer",
+    company: "ProductStudio-Kindtech",
+    period: "Aug 2023 - May 2025",
+    description: "Led mobile app development across multiple products (POOLit, SimplePrints, Scoach), focusing on React Native upgrades, performance optimization, state management, and feature implementation.",
+    highlights: ["React Native", "Redux Toolkit", "NodeJS", "Express", "Swift", "Objective-C", "Firebase"]
+  },
+  {
+    title: "Machine Learning Intern",
+    company: "Quantiphi Analytics",
+    period: "Jan 2023 - Jul 2023",
+    description: "Built a text-to-image search engine using deep learning techniques, achieving strong retrieval performance across a large image dataset.",
+    highlights: ["ResNet-50", "Cosine Similarity", "Image Processing", "Data Pipelines"]
+  }
+]
 }
 
 export default Constants

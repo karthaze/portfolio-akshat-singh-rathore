@@ -44,6 +44,7 @@ export const Header = () => {
         <ul className={styles.navList}>
           <li><a href="#hero" onClick={() => setNavVisible(false)}>Home</a></li>
           <li><a href="#about" onClick={() => setNavVisible(false)}>About</a></li>
+          <li><a href="#experience" onClick={() => setNavVisible(false)}>Experience</a></li>
           <li><a href="#skills" onClick={() => setNavVisible(false)}>Skills</a></li>
           <li><a href="#projects" onClick={() => setNavVisible(false)}>Projects</a></li>
           <li><a href="#contact" onClick={() => setNavVisible(false)}>Contact</a></li>
