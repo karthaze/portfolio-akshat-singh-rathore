@@ -33,12 +33,14 @@ export const About = () => {
         <div className={styles.content}>
           <h2 className={`${styles.heading} ${showHeading ? styles.visible : ''}`}>
             <span className={styles.directorSlate}>ABOUT</span>
-            <span className={styles.mainHeading}>Who I Am</span>
+            <span className={styles.mainHeading}>Who Am I</span>
           </h2>
 
           <div className={`${styles.aboutContent} ${showContent ? styles.visible : ''}`}>
             <p>
-              Hello! I'm <strong>Akshat</strong>
+              “Naam? Akshat Singh Rathore.”
+              “Degree? B.Tech.”
+              “Kaam? Software Engineer.”
             </p>
             <pre style={{ whiteSpace: 'pre-wrap' }}>
               {Constants.summary}

@@ -53,12 +53,10 @@ const Constants = {
       category: "Frontend",
     },
   ],
-      summary: `Software Engineer by profession, storyteller by temperament.
-Graduated with a B.Tech and immediately dove headfirst into building real-world apps, where bugs are sneaky little villains and every feature request sounds like a side quest from a video game.
-I've worked on apps that help you find carpool buddies, design photo books, and even track your squats, so yeah, if it has users and a loading spinner, I've probably tried to optimize it.
-I like my code clean, my deadlines tight, and my UI slightly dramatic.
-Also, I watch way too many movies and occasionally talk about commits like they\’re plot twists. Navigate to contacts if you want things done — and narrated like a Tarantino voiceover.`,
-
+    summary: `Hello, I am a Software Engineer with a strong foundation in full-stack development, specializing in building scalable, user-centric applications across web and mobile platforms. 
+              Experienced in modern JavaScript frameworks, backend architecture, and system optimization. Proven ability to lead feature development, refactor legacy codebases, 
+              and deliver high-performance applications. Adept at collaborating across teams, integrating third-party APIs, and enhancing user experience through thoughtful design and performance tuning. 
+              Passionate about problem-solving, clean code, and crafting digital experiences that balance function with creativity.`,
     skills: {
     programming: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "Swift", "C++", "Objective-C"],
     frontend: ["ReactJS", "React Native", "Redux Toolkit", "Tailwind CSS", "HTML5", "CSS3", "SwiftUI", "UIKit", "MVVM"],

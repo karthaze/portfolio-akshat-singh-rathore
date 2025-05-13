@@ -34,7 +34,7 @@ export const Projects = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveProject((prev) => (prev + 1) % projects.length);
-    }, 6000);
+    }, 12000);
 
     return () => clearInterval(interval);
   }, []);
