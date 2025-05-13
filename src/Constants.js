@@ -77,14 +77,9 @@ There’s something satisfying about getting the timing, the pacing, and the flo
     url: 'https://linkedin.com/in/akshat1879',
   },
   {
-    icon: Twitter,
-    name: 'Twitter',
-    url: 'https://twitter.com/yourusername',
-  },
-  {
     icon: Instagram,
     name: 'Instagram',
-    url: 'https://instagram.com/yourusername',
+    url: 'https://instagram.com/akshat_1879',
   },
 ],
 }
