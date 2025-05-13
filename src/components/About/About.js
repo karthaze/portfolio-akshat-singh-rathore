@@ -38,9 +38,7 @@ export const About = () => {
 
           <div className={`${styles.aboutContent} ${showContent ? styles.visible : ''}`}>
             <p>
-              “Naam? Akshat Singh Rathore.”
-              “Degree? B.Tech.”
-              “Kaam? Software Engineer.”
+              Hello! I'm <strong>Akshat</strong>
             </p>
             <pre style={{ whiteSpace: 'pre-wrap' }}>
               {Constants.summary}
