@@ -66,7 +66,7 @@ export const About = () => {
 
             <div className={styles.cta}>
               <a
-                href="/resume.pdf"
+                href={Constants.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.resumeBtn}

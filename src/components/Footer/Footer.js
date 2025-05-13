@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
           
           <div className={styles.footerQuote}>
-            "I like the smell of Napalm in the morning."
+            "I couldn't help but notice you noticing me noticing you."
           </div>
         </div>
       </div>
