@@ -10,6 +10,7 @@ import { Footer } from './components/Footer/Footer';
 import { Loader } from './components/Loader/Loader';
 import { FilmGrain } from './components/FilmGrain/FilmGrain';
 import styles from './App.module.css';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className={styles.app}>
+      <Analytics/>
       {loading ? (
         <Loader />
       ) : (
