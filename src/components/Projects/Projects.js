@@ -82,13 +82,11 @@ export const Projects = () => {
                   </div>
                 </div>
 
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer" className={styles.linkWrapper}>
-                  <div className={styles.projectImageContainer}>
-                    <div className={styles.filmFrameTop}></div>
-                    <img src={project.image} alt={project.title} className={styles.projectImage} />
-                    <div className={styles.filmFrameBottom}></div>
-                  </div>
-                </a>
+                <div className={styles.projectImageContainer}>
+                  <div className={styles.filmFrameTop}></div>
+                  <img src={project.image} alt={project.title} className={styles.projectImage} />
+                  <div className={styles.filmFrameBottom}></div>
+                </div>
               </div>
             ))}
           </div>
