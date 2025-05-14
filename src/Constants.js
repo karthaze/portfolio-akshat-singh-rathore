@@ -105,6 +105,7 @@ aboutYouImages : [
   require('./Assets/images/personalPhoto2.jpeg'),
   require('./Assets/images/gasperNoe.jpg'),
   require('./Assets/images/personalPhoto3.jpeg'),
+  require('./Assets/images/personalPhoto5.jpeg'),
   require('./Assets/images/tarantino.webp'),
   require('./Assets/images/personalPhoto4.jpeg'),
 ]
