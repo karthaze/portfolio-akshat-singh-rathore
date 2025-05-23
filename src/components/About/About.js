@@ -57,7 +57,7 @@ export const About = () => {
               </div>
               <div className={styles.detailItem}>
                 <span className={styles.detailLabel}>Location:</span>
-                <span className={styles.detailValue}>Bangalore / Pune / Noida</span>
+                <span className={styles.detailValue}> Bangalore / Mumbai / Pune / Noida</span>
               </div>
               <div className={styles.detailItem}>
                 <span className={styles.detailLabel}>Availability:</span>
