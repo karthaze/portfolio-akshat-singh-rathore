@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Instagram, Phone } from 'lucide-react';
 const Constants = {
     name:"Akshat Singh Rathore",
     firstName:"Akshat",
-    email: "getakshatrathore@gmail.com",
+    email: "getakshatsingh@gmail.com",
     phone:"+91-7974868606",
     linkedIn: "",
     github:"https://github.com/karthaze",
@@ -13,7 +13,7 @@ const Constants = {
         name:"GonzoIndia",
         link:"https://gonzoindia.vercel.app/",
         description:"",
-    },
+    }, 
     conway:{
         name:"Conway's Game of Life",
         link:"https://conways-game-ten.vercel.app/",
@@ -120,10 +120,13 @@ experiences: [
     title: "Software Engineer",
     company: "ProductStudio-Kindtech",
     period: "Aug 2023 - May 2025",
-    description: "Led mobile app development across multiple products (POOLit, SimplePrints, Scoach), focusing on React Native upgrades, performance optimization, state management, and feature implementation.",
+    description: "Contributed in building client projects, focusing on growing new age technologies, performance optimization, state management, and feature implementation.",
     highlights: [
+      "Python",
       "React Native", 
-      "Redux Toolkit", 
+      "Redux Toolkit",
+      "Tensorflow",
+      "Machine Learning", 
       "NodeJS", 
       "Express", 
       "Swift", 
